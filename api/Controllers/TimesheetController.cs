@@ -2,54 +2,53 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using api.Database;
+using api.Interfaces;
+using api.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Cors;
-using api.Models;
-using api.Interfaces;
-using api.Database;
 
 namespace api.Controllers
-{   
+{
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class TimesheetController : ControllerBase
     {
-        IUserDataHandler handlerOfData = new UserDataHandler();
-
-        // GET: api/Users
+        ITimesheetDataHandler handlerOfData = new TimesheetDataHandler();
+        // GET: api/Timesheet
         [EnableCors("OpenPolicy")]
         [HttpGet]
-        public List<User> Get()
+        public List<Timesheet> Get()
         {
             return handlerOfData.Select();
         }
 
-        // GET: api/Users/5
+        // GET: api/Timesheet/5
         [EnableCors("OpenPolicy")]
-        [HttpGet("{id}", Name = "GetUser")]
-        public List<User> Get(int id)
+        [HttpGet("{id}", Name = "GetTimesheet")]
+        public List<Timesheet> Get(int id)
         {
             return handlerOfData.SelectById(id);
         }
 
-        // POST: api/Users
+        // POST: api/Timesheet
         [EnableCors("OpenPolicy")]
         [HttpPost]
-        public void Post([FromBody] User user)
+        public void Post([FromBody] Timesheet timesheet)
         {
-            handlerOfData.Insert(user);
+            handlerOfData.Insert(timesheet);
         }
 
-        // PUT: api/Users/5
+        // PUT: api/Timesheet/5
         [EnableCors("OpenPolicy")]
-        [HttpPut]
-        public void Put([FromBody] User user)
+        [HttpPut("{id}")]
+        public void Put([FromBody] Timesheet timesheet)
         {
-            handlerOfData.Update(user);
+            handlerOfData.Update(timesheet);
         }
 
-        // DELETE: api/Users/5
+        // DELETE: api/Timesheet/5
         [EnableCors("OpenPolicy")]
         [HttpDelete("{id}")]
         public void Delete(int id)

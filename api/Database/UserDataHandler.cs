@@ -17,11 +17,15 @@ namespace api.Database
         }
         public void Delete(int id)
         {
+            System.Console.WriteLine("Preparing to delete");
+
             string stm = $@"DELETE FROM user WHERE user_id = {id}";
 
             db.Open();
             db.Delete(stm);
             db.Close();
+
+            System.Console.WriteLine("Deletion successful");
         }
 
         public Dictionary<string, object?> GetValues(User User)
@@ -67,6 +71,8 @@ namespace api.Database
 
         public List<User> Select()
         {
+            System.Console.WriteLine("Preparing to select");
+
             List<User> allTheUsers = new List<User>();
 
             string stm = @"SELECT * from user";
@@ -101,11 +107,16 @@ namespace api.Database
             }
 
             db.Close();
+
+            System.Console.WriteLine("Selection complete");
+
             return allTheUsers;
         }
 
         public List<User> SelectById(int id)
         {
+            System.Console.WriteLine("Preparing to select");
+
             List<User> theUser = new List<User>();
 
             string stm = @"SELECT * from user WHERE user_id = " + id + " LIMIT 1";
@@ -138,6 +149,9 @@ namespace api.Database
                 theUser.Add(temp);
             }
             db.Close();
+
+            System.Console.WriteLine("Selection successful");
+
             return theUser;
         }
 
@@ -180,7 +194,33 @@ namespace api.Database
 
         public void Update(User User)
         {
-            throw new NotImplementedException();
+            System.Console.WriteLine("Preparing to update");
+
+            var values = GetValues(User);
+
+            string stm = @"UPDATE user SET
+            hash_password = @hash_password,
+            user_ssn = @user_ssn,
+            user_first_name = @user_first_name,
+            user_middle_name = @user_middle_name,
+            user_last_name = @user_last_name,
+            user_email = @user_email,
+            user_start_date = @user_start_date,
+            user_salary = @user_salary,
+            user_shift_start = @user_shift_start,
+            user_bday = @user_bday,
+            user_phone = @user_phone,
+            image_url = @image_url,
+            admin_status = @admin_status,
+            username = @username,
+            department_id = @department_id
+            WHERE user_id = @user_id";
+
+            db.Open();
+            db.Update(stm, values);
+            db.Close();
+
+            System.Console.WriteLine("Updation successful");
         }
     }
 }

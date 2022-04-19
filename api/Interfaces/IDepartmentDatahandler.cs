@@ -4,13 +4,13 @@ namespace api.Interfaces
 {
     public interface IDepartmentDatahandler
     {
-         public List<User> Select();
-         public List<User> SelectById(int id);
-         public List<User> SelectByUsername(string department);
+         public List<Department> Select();
+         public List<Department> SelectById(int id);
+         public List<Department> SelectByDepartmentName(string department);
          public void Delete(int id);
-         public void Insert(User User);
-         public void Update(User User);
+         public void Insert(Department department);
+         public void Update(Department department);
 
-         public Dictionary<string, object?> GetValues(User User);
+         public Dictionary<string, object?> GetValues(Department department);
     }
 }

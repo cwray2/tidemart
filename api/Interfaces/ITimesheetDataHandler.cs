@@ -4,13 +4,13 @@ namespace api.Interfaces
 {
     public interface ITimesheetDataHandler
     {
-         public List<User> Select();
-         public List<User> SelectById(int id);
-         public List<User> SelectByUsername(string username);
+         public List<Timesheet> Select();
+         public List<Timesheet> SelectById(int id);
+         public List<Timesheet> SelectByUsername(string timesheet);
          public void Delete(int id);
-         public void Insert(User User);
-         public void Update(User User);
+         public void Insert(Timesheet timesheet);
+         public void Update(Timesheet timesheet);
 
-         public Dictionary<string, object?> GetValues(User User);
+         public Dictionary<string, object?> GetValues(Timesheet timesheet);
     }
 }
