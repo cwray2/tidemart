@@ -92,13 +92,13 @@
             </div>
             <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
               <div class="box p-3">
-                <h3>7 Days</h3>
+                <h3>7</h3>
                 <p class="lead">Days Late</p>
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
               <div class="box p-3">
-                <h3>2 Days</h3>
+                <h3>2</h3>
                 <p class="lead">Vacation Days Left</p>
               </div>
             </div>
@@ -108,38 +108,42 @@
         <!-- Employee Time Form -->
         <section class="mt-4" id="page">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
               <!-- <div id="clock"></div> -->
               <br>
               <h4 class="text-white mb-4" style="text-align: center;">Log Time:</h4>
               <div id="clock"></div>
-              <div class="form-outline form-white mb-4">
-                <input type="" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Start Time" id="" class="form-control form-control-lg" />
-              </div>
-              <div class="form-outline form-white mb-4">
-                <input type="" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="End Time" id="" class="form-control form-control-lg" />
-              </div>
-              <div class="form-outline form-white mb-4">
-                <input type="" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Description" id="" class="form-control form-control-lg" />
-              </div>
-              <div class="form-outline form-white mb-4">
-                <input type="" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Task" id="" class="form-control form-control-lg" />
-              </div>
-              <div style="text-align: center;">
-                <button  id="button" type="button" class="btn text-white">Submit</button>
-              </div>
-              <br>
+                <form style="padding-left: 100px; padding-right: 100px;">
+                <div class="form-outline form-white mb-4">
+                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Start Time" id="" class="form-control form-control-lg"/>
+                </div>
+                <div class="form-outline form-white mb-4">
+                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="End Time" id="" class="form-control form-control-lg" />
+                </div>
+                <div class="form-outline form-white mb-4">
+                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Description" id="" class="form-control form-control-lg" />
+                </div>
+                <div class="form-outline form-white mb-4">
+                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Task" id="" class="form-control form-control-lg" />
+                </div>
+                <div style="text-align: center;">
+                  <button  id="button" type="submit" class="btn text-white">Submit</button>
+                </div>
+                <br>
+              </form>
+             
             </div>
-            <div class="col-lg-6">
+            <!-- <div class="col-lg-6">
               <br>
               <h4 class="text-white mb-4" style="text-align: center;">Employee Mail:</h4>
               <div id="listBox"></div>
               <p class="text-white">Somone stole the janitors food out of the fridge. This is the 3rd time this week. I know we can't afford new security cameras but please stop! -Garret</p>
             </div>
-          </div>
+          </div> -->
         </section>
         <!-- Employee Time Form -->
       </div>
     </section>
+    
   </body>
 </html>
