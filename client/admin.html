@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" sizes="16x16"/>
+    <!-- Favicon -->
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <!-- Bootstrap CDN -->
+
+    <!-- CSS -->
+    <link href="./styles/admin.css" rel="stylesheet" />
+    <!-- CSS -->
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <!-- Bootstrap Icons CDN -->
+
+    <!-- Bootstrap CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Bootstrap CDN-->
+
+    <!-- Bootstrap Java Script CDN-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap Java Script CDN-->
+
+    <!-- Clock script -->
+    <script src="./scripts/clock.js"></script>
+    <!-- Clock script -->
+
+
+    <title>Tide Market: Admin Panel</title>
+  </head>
+
+  <body>
+    <section id="wrapper">
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid mx-2">
+          <!-- User Info -->
+          <div class="navbar-header">
+            <img class="rounded-pill img-fluid" width="65" src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907008/medium/1501685726/enhance" alt="">
+            <p class="text-white">Garret Ray</p>
+          </div>
+          <!-- User Info -->
+          <div class="collapse navbar-collapse" id="toggle-navbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Settings
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Dark Mode</a>
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i data-show="show-side-navigation1" class="uil-bars show-side-btn"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Employee Stats -->
+        <section class="statis mt-4 text-center">
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="box p-3">
+                <h3>12</h3>
+                <p class="lead">Actively Working</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="box p-3">
+                <h3>24</h3>
+                <p class="lead">Away From Work</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+              <div class="box p-3">
+                <h3>7</h3>
+                <p class="lead">Late Employees</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="box p-3">
+                <h3>2</h3>
+                <p class="lead">Your Days Late</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Employee Stats -->
+        
+        <section class="mt-4">
+          <div class="row">
+            <div class="col-lg-12">
+              <br>
+              <h4 class="text-white mb-4" style="text-align: center;">Time Actions:</h4>
+                <div style="text-align: center;">
+                  <button id="button" type="button" class="btn text-white fw-bold" data-toggle="modal" data-target="#LogTimeButton">Log Time</button>
+                  <button  id="button" type="button" class="btn text-white fw-bold">Generate Report</button>
+                </div>
+                <br>
+              </form>
+            </div>
+            <!-- <div class="col-lg-8">
+              <br>
+              <h4 class="text-white mb-4" style="text-align: center;">Employee's:</h4>
+                <form style="padding-left: 100px; padding-right: 100px;">
+                <div class="form-outline form-white mb-4">
+                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Table Place Holder" id="" class="form-control form-control-lg"/>
+                </div>
+                <div class="form-outline form-white mb-4">
+                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Table Place Holder" id="" class="form-control form-control-lg" />
+                </div>
+                <div class="form-outline form-white mb-4">
+                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Table Place Holder" id="" class="form-control form-control-lg" />
+                </div>
+                <div class="form-outline form-white mb-4">
+                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Table Place Holder" id="" class="form-control form-control-lg" />
+                </div>
+                <div style="text-align: center;">
+                  <button  id="button" type="submit" class="btn text-white">Submit</button>
+                </div>
+                <br>
+              </form>
+            </div> -->
+        </section>
+
+        <section class="mt-4">
+          <div class="row">
+            <div class="col-lg-12">
+              <br>
+              <h4 class="text-white mb-4" style="text-align: center;">Employee's:</h4>
+                <form style="padding-left: 100px; padding-right: 100px;">
+                <div class="form-outline form-white mb-4">
+                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Table Place Holder" id="" class="form-control form-control-lg"/>
+                </div>
+                <div class="form-outline form-white mb-4">
+                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Table Place Holder" id="" class="form-control form-control-lg" />
+                </div>
+                <div class="form-outline form-white mb-4">
+                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Table Place Holder" id="" class="form-control form-control-lg" />
+                </div>
+                <div class="form-outline form-white mb-4">
+                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Table Place Holder" id="" class="form-control form-control-lg" />
+                </div>
+                <div style="text-align: center;">
+                  <button  id="button" type="submit" class="btn text-white">Submit</button>
+                </div>
+                <br>
+              </form>
+            </div>
+        </section>
+
+    <!-- Log Time Modal -->
+    <div class="modal" id="LogTimeButton">
+      <div class="modal-dialog">
+        <div class="modal-content h3">
+          <div class="modal-header">
+            <h2 type="button" data-dismiss="modal" class="modal-title close"><i style="size: 30px; color: white;" class="bi bi-x"></i></h2>
+          </div>
+            <div class="modal-body" style="text-align: center; color: white;">
+              <div class="row">
+                <div class="col-lg-12">
+                  <!-- <div id="clock"></div> -->
+                  <br>
+                  <h4 class="text-white mb-4" style="text-align: center;">Log Time:</h4>
+                  <div id="clock"></div>
+                    <form style="padding-left: 100px; padding-right: 100px;">
+                    <div class="form-outline form-white mb-4">
+                      <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Start Time" id="" class="form-control form-control-lg"/>
+                    </div>
+                    <div class="form-outline form-white mb-4">
+                      <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="End Time" id="" class="form-control form-control-lg" />
+                    </div>
+                    <div class="form-outline form-white mb-4">
+                      <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Description" id="" class="form-control form-control-lg" />
+                    </div>
+                    <div class="form-outline form-white mb-4">
+                      <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Task" id="" class="form-control form-control-lg" />
+                    </div>
+                    <div style="text-align: center;">
+                      <button  id="button" type="submit" class="btn text-white">Submit</button>
+                    </div>
+                    <br>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Log Time Modal -->  
+    
+  </body>
+</html>
