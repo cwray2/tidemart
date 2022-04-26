@@ -56,13 +56,13 @@
                   <h6 class="text-white-50 mb-4">Web based time and attendance software</h6>
                   <form>
                     <div class="form-outline form-white mb-4">
-                      <input type="email" style="background: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Employee ID" id="typeEmail" class="form-control form-control-lg" />
+                      <input type="email" style="background: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Employee ID" id="typeUsername" class="form-control form-control-lg" />
                     </div>
                     <div class="form-outline form-white mb-4">
                       <input type="password" style="background: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Password" id="typePassword" class="form-control form-control-lg" />
                     </div>
                  </form>
-                  <a id="mainLoginButton" role="button" class="btn text-white btn-lg px-5" style="border-color: white;">Login</a>
+                  <button id="mainLoginButton" role="button" onclick="onSignIn()" class="btn text-white btn-lg px-5" style="border-color: white;">Login</button>
                 </div>
                 <div>
                   <button type="submit" style="font-size: 12px;" class="mb-1 btn btn-link text-white fw-bold" data-toggle="modal" data-target="#SupportButton">Technical Support</button>
@@ -135,5 +135,6 @@
       </div>
     </div> -->
     <!-- Support Modal -->  
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

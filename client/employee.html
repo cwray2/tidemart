@@ -130,17 +130,31 @@
               <h4 class="text-white mb-4" style="text-align: center;">Log Time:</h4>
               <div id="clock"></div>
                 <form style="padding-left: 100px; padding-right: 100px;">
+                  
                 <div class="form-outline form-white mb-4">
-                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Start Time" id="" class="form-control form-control-lg"/>
+                  <label for="start-time">Start Time</label>
+                  <input class="yuh" size="1" type="time" min="07:00" max="18:00" width="10%" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Start Time" id="start-time" class="form-control form-control-lg"/>
                 </div>
                 <div class="form-outline form-white mb-4">
-                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="End Time" id="" class="form-control form-control-lg" />
+                  <input class="yuh" size="1" type="time" min="07:00" max="18:00" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="End Time" id="" class="form-control form-control-lg" />
                 </div>
                 <div class="form-outline form-white mb-4">
-                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Description" id="" class="form-control form-control-lg" />
+                  <input class="yuh" type="text" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Description" id="" class="form-control form-control-lg" />
                 </div>
                 <div class="form-outline form-white mb-4">
-                  <input type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Task" id="" class="form-control form-control-lg" />
+                  <!-- <input class="yuh" type="" required="required" style="background-color: rgba(0, 0, 0, 0.3); border-color: white;" placeholder="Task" id="" class="form-control form-control-lg" /> -->
+                  <label for="pet-select">Choose a task:</label>
+
+                  <select id="pet-select">
+                      <option value="">--Please choose an option--</option>
+                      <option value="dog">Task 1</option>
+                      <option value="cat">Task 2</option>
+                      <option value="hamster">Task 3</option>
+                      <option value="parrot">Task 4</option>
+                      <option value="spider">Task 5</option>
+                      <option value="goldfish">Task 6</option>
+                  </select>
+
                 </div>
                 <div style="text-align: center;">
                   <button  id="button" type="submit" class="btn text-white fw-bold">Submit</button>

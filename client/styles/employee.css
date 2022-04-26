@@ -170,6 +170,21 @@ body{
     background-color: rgba(0, 0, 0, 0.3); 
 }
 
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+
+input {
+    width: 10%;
+    margin: .4rem 0;
+}
+
+.yuh {
+    width: 10%;
+}
+
 /* #timeForm{
     background-color: rgba(0, 0, 0, 0.3); 
     border-color: white;
