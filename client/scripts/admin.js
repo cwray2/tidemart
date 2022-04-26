@@ -39,6 +39,7 @@ $(document).ready(function() {
     if (location.href.startsWith("file://")) {
         // local URL's are not allowed
         url_ws_mock_get = 'https://localhost:6969/api/users';
+        url_ws_mock_delete = 'https://localhost:6969/api/users';
         url_ws_mock_ok = 'https://luca-vercelli.github.io/DataTable-AltEditor/example/03_ajax_objects/mock_svc_ok.json';
     }
 
@@ -77,7 +78,7 @@ $(document).ready(function() {
         onAddRow: function(datatable, rowdata, success, error) {
             $.ajax({
                 // a tipycal url would be / with type='PUT'
-                url: url_ws_mock_ok,
+                url: url_ws_mock_get,
                 type: 'GET',
                 data: rowdata,
                 success: success,
@@ -87,8 +88,8 @@ $(document).ready(function() {
         onDeleteRow: function(datatable, rowdata, success, error) {
             $.ajax({
                 // a tipycal url would be /{id} with type='DELETE'
-                url: url_ws_mock_ok,
-                type: 'GET',
+                url: url_ws_mock_delete,
+                type: 'DELETE',
                 data: rowdata,
                 success: success,
                 error: error
