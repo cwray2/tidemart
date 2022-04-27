@@ -41,8 +41,7 @@
 
     <title>Tide Market: Employee Panel</title>
   </head>
-
-  <body>
+  <body id="main">
     <section id="wrapper">
       <nav class="navbar navbar-expand-md">
         <div class="container-fluid mx-2">
@@ -52,6 +51,7 @@
             <p class="text-white">Caleb Ray</p>
           </div>
           <!-- User Info -->
+          <!-- Settings Drop Down -->
           <div class="collapse navbar-collapse" id="toggle-navbar">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item dropdown">
@@ -59,8 +59,12 @@
                   Settings
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">Dark Mode</a>
+                  <li style="align-items: center;">
+                    <a class="dropdown-item">Dark Mode</a>
+                    <label class="switch">
+                      <input type="checkbox" onclick="darkLight()" id="checkBox" >
+                      <span class="slider"></span>
+                    </label>
                   </li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Log out</a></li>
@@ -75,6 +79,7 @@
           </div>
         </div>
       </nav>
+      <!-- End Settings Drop Down -->
       
       <!-- Employee Stats -->
         <section class="statis mt-4 text-center">
