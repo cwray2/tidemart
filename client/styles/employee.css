@@ -5,7 +5,6 @@ body{
 }
 
 #wrapper{
-	/* margin-left: var(--sidebar-width); */
 	transition: all .3s ease-in-out;
 }
 
@@ -112,7 +111,6 @@ body{
     color: white;
 }
 
-/* Modal Header */
 .modal-header{
     padding: 16px 16px;
     /* background-color: rgba(0, 0, 0, 0.6);  */
@@ -121,19 +119,16 @@ body{
     align-items: center;
 }
     
-  /* Modal Body */
 .modal-body{
     padding: 2px 16px;
 }
     
-    /* Modal Footer */
 .modal-footer{
     padding: 16px 16px;
     backdrop-filter: blur(16px);
     border: 1px solid transparent;
 }
     
-    /* Modal Content */
 .modal-content{
     position: relative;
     background-color: rgba(0, 0, 0, 0.8); 
@@ -147,20 +142,19 @@ body{
     animation-duration: 0.5s
 }
     
-    /* Add Animation */
-  @keyframes animatetop{
+@keyframes animatetop{
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
-  } 
+} 
 
-  .form-control::placeholder{
+.form-control::placeholder{
     color: white!important;
-  }
+}
     
-  input:not(:placeholder-shown){
+input:not(:placeholder-shown){
     color:  white!important;
     background-color: rgba(0, 0, 0, 0.3); 
-  }
+}
 
 #page{
     background-color: rgba(255, 255, 255, 0.1);
@@ -185,7 +179,3 @@ input {
     width: 10%;
 }
 
-/* #timeForm{
-    background-color: rgba(0, 0, 0, 0.3); 
-    border-color: white;
-} */

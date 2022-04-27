@@ -25,28 +25,23 @@ input:not(:placeholder-shown){
   background-color: rgba(0, 0, 0, 0.3); 
 }
   
-/* Modal Header */
 .modal-header{
   padding: 16px 16px;
-  /* background-color: rgba(0, 0, 0, 0.6);  */
   backdrop-filter: blur(16px);
   border: 1px solid transparent;
   align-items: center;
 }
   
-/* Modal Body */
 .modal-body{
   padding: 2px 16px;
 }
   
-  /* Modal Footer */
 .modal-footer{
   padding: 16px 16px;
   backdrop-filter: blur(16px);
   border: 1px solid transparent;
 }
   
-  /* Modal Content */
 .modal-content{
   position: relative;
   background-color: rgba(0, 0, 0, 0.8); 
@@ -60,19 +55,11 @@ input:not(:placeholder-shown){
   animation-duration: 0.5s
 }
   
-  /* Add Animation */
 @keyframes animatetop{
   from {top: -300px; opacity: 0}
   to {top: 0; opacity: 1}
 } 
-  
-  
-  /* canvas{ 
-    display: block; 
-    vertical-align: bottom; 
-  }  */
-  
-  /* ---- particles.js container ---- */ 
+   
 #particles-js{ 
   position:absolute; 
   width: 100%; 
@@ -82,11 +69,6 @@ input:not(:placeholder-shown){
   background-size: cover; 
   background-position: 50% 50%; 
 } 
-  
-  /* #Red{
-    background-color: #9d2235; 
-  } */
-
   
 .button{
   display: inline-flex;
@@ -113,9 +95,7 @@ a{
   font-weight: bold;
   letter-spacing: 1px;
 }
-  
-  /* white to red button */
-  
+    
 #button-2{
   position: relative;
   overflow: hidden;
