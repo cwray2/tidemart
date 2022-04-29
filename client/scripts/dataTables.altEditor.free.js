@@ -185,7 +185,8 @@
 
                 this._initLanguage();
 
-                var modal = '<div class="modal fade altEditor-modal reveal" id="' + modal_id + '" tabindex="-1" role="dialog" data-reveal>' +
+                var modal = '<div id="add-modal">'
+                    '<div class="modal fade altEditor-modal reveal" id="' + modal_id + '" tabindex="-1" role="dialog" data-reveal>' +
                     '<div class="modal-dialog">' +
                     '<div class="modal-content">' +
                     '<div class="modal-header">' +
@@ -200,6 +201,7 @@
                     '</div>' +
                     '</div>' +
                     '</div>' +
+                    '</div>'
                     '</div>';
                 // Add modal
                 $('body').append(modal);
