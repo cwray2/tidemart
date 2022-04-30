@@ -17,24 +17,24 @@ $(document).ready(function () {
   var columnDefs = [
     {
       data: "userID",
-      title: "Id",
+      title: "ID #",
       type: "readonly",
     },
     {
       data: "firstName",
-      title: "Name",
+      title: "First Name",
     },
     {
       data: "lastName",
-      title: "Position",
+      title: "Last Name",
     },
     {
       data: "username",
-      title: "Office",
+      title: "Username",
     },
     {
       data: "phone",
-      title: "Extn.",
+      title: "Phone #",
     },
     {
       data: "startDate",
