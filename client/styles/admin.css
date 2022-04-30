@@ -163,3 +163,11 @@ input:not(:placeholder-shown){
     background-color: rgba(0, 0, 0, 0.3); 
 }
 
+.table{
+    color: #9d2235;
+    font-size: 20px;
+}
+
+th{
+    color: white;
+}
