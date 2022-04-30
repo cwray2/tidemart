@@ -185,8 +185,7 @@
 
                 this._initLanguage();
 
-                var modal = '<div id="add-modal">'
-                    '<div class="modal fade altEditor-modal reveal" id="' + modal_id + '" tabindex="-1" role="dialog" data-reveal>' +
+                var modal = '<div class="modal fade altEditor-modal reveal" id="' + modal_id + '" tabindex="-1" role="dialog" data-reveal>' +
                     '<div class="modal-dialog">' +
                     '<div class="modal-content">' +
                     '<div class="modal-header">' +
@@ -201,7 +200,6 @@
                     '</div>' +
                     '</div>' +
                     '</div>' +
-                    '</div>'
                     '</div>';
                 // Add modal
                 $('body').append(modal);
@@ -468,6 +466,7 @@
                 });
                 var formName = 'altEditor-delete-form-' + this.random_id;
                 var selector = this.modal_selector;
+                // console.log(dt.);
                 var fill = function () {
                     var btns = '<button type="button" data-content="remove" class="btn btn-default button secondary" data-close data-dismiss="modal">' + that.language.modalClose + '</button>' +
                         '<button type="submit"  data-content="remove" class="btn btn-danger button" id="deleteRowBtn">' + that.language.delete.button + '</button>';
